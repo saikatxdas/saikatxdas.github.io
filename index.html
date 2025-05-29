@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>saikatxdas</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin-top: 20px;
+  font-family: "Tahoma";
+  font-size: 16px;
+  line-height:1.5;
+}
+
+a {
+      text-decoration:none;
+      display: inline-block;
+   }
+a, a:visited, a:hover, a:active {
+  color: blue;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #e6e8ff;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 12px;
+  font-family: "Tahoma";
+  font-size: 16px;
+  width: 200px;
+}
+
+.column {
+  float: left;
+  width: 350px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+table, th, td {
+  				border: 0px solid black;
+  				border-collapse: collapse;
+			}
+			td, th {
+  				padding-left: 0px;
+  				padding-right: 25px;
+			}
+			
+.tablink:hover {
+  background-color: #777;
+}
+
+p.indent {
+    text-indent: 30px;
+}
+
+img {
+      float: left;
+      margin: 10px;
+    }
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 10px 10px;
+  height: 100%;
+}
+
+#Home {background-color: white;}
+#Research {background-color: white;}
+#Links {background-color: white;}
+#Profile {background-color: white;}
+</style>
+</head>
+<body>
+
+<div style="text-align: center;">
+<h2 style="font-family: 'Courier New', monospace;">Saikat Das</h2>
+
+</div>
+
+<div style="text-align: center;" >
+<div style="display: inline-block; text-align: left;">
+<button class="tablink" onclick="openPage('Home', this, '#b3baff')" id="defaultOpen"> <i> <id ="tab1" class="fa fa-fw fa-home"></i> Home</button>
+<button class="tablink" onclick="openPage('Research', this, '#b3baff')" > <i> <id ="tab2" class="fa fa-fw fa-pencil-square"></i> Research</button>
+<button class="tablink" onclick="openPage('Links', this, '#b3baff')"> <i> <id ="tab3" class="fa fa-fw fa-link"></i> Links</button>
+<button class="tablink" onclick="openPage('Profile', this, '#b3baff')"><i> <id ="tab4" class="fa fa-fw fa-folder-open"></i> Profile</button>
+<!--<button class="tablink" onclick="openPage('arXiv', this, '#b3baff')">arXiv</button>-->
+</div>
+</div>
+   
+<div style="text-align: center;" >
+<div style="display: inline-block; text-align: justify; max-width:800px; min-width: 400px;">
+<div id="Home" class="tabcontent">
+  <img src="./myimg.jpg" height="216" width="195" border='2' >
+  
+  <p>Hi! Welcome to my homepage. I am a postdoctoral researcher at University of Florida, USA, since September 2024. Before moving to USA, 
+	I was a postdoctoral researcher at Yukawa Institute for Theoretical Physics, Kyoto University, Japan (2021 - 2024) and graduate student 
+	at Raman Research Institute, India (2016-2021). My research interests are in high-energy and particle astrophysics involving cosmic rays, 
+	neutrinos, gamma rays, and dark matter. Currently, I am working on particle-in-cell (PIC) simulations of relativistic magnetized turbulence
+	in astrophysical sources. My focus is to extract information on cosmic-ray acceleration in compact objects and highly luminous gamma-ray sources,
+	using multi-messenger studies. </p> <br> <!--using observations, modeling, and numerical analysis and make accurate predictions for the multi-messenger signals that future telescopes will detect.<!--I love spicy foods, reading fiction and non-fiction books. I plan to open a publishing house in the future--> 
+  	
+  	<div  style="margin-top:-25px;text-align: left;" >
+    	<h4><i> <id ="tab2" class="fa fa-fw fa-envelope"></i> Contact Info</h4>
+  	Office: K501, YITP Research Building, <br>
+  	Kyoto University, Kyoto 606-8502, Japan<br>
+  	Email: <a href="mailto: saikat.das@yukawa.kyoto-u.ac.jp" target="_blank" style="target-new: tab;">saikat.das@yukawa.kyoto-u.ac.jp</a>
+	</div>
+   
+</div>
+</div>
+</div>
+
+<div style="text-align: center;" >
+<div style="display: inline-block; text-align: left; max-width:800px;min-width: 400px;">
+<div id="Research" class="tabcontent" style="margin-top:-25px;">
+  <!--<h3>Research</h3>-->
+  	<h4><i> <id ="tab2" class="fa fa-fw fa-repeat"></i> Research Interest</h4>
+	<ul>
+		<li> High-energy cosmic rays, neutrinos, gamma-rays</li>
+		<li>Multi-messenger probes of dark matter</li>	
+		<li> Active Galactic Nuclei & Blazar properties </li>
+		<li> Gamma-ray Burst and GW connection</li>
+		<!--<li> Cosmological Perturbations </li>-->
+	</ul> 
+
+	<h4><i> <id ="tab2" class="fa fa-fw fa-th-list"></i> <a href="https://arxiv.org/a/das_s_20.html"> List of Publications </a></h4>
+	
+	<h4> Overview</h4>
+  <p class="indent" align="justify">
+  I work on theoretical high-energy astrophysics. In my PhD, we studied the origin and propagation of ultrahigh-energy cosmic rays (UHECRs; $E\gtrsim10^{17}$ eV), the astrophysical properties of their accelerators and explaining the observed spectrum, mass composition and anisotropy. We have estimated the observed secondary cosmogenic photon and neutrino fluxes to restrict the allowed source models. </p>
+  <p class="indent" align="justify">
+  Another interesting problem is the origin of the astrophysical neutrino signal observed by the IceCube neutrino observatory. We tried to explain the diffuse TeV-PeV neutrinos and its connection to photohadronic ($p\gamma$) or hadronuclear ($pp$) processes in Fermi-LAT detected blazars. Line-of-sight UHECR interactions are also found to explain VHE gamma-ray emission from blazars and $\gamma$-ray bursts.</p>
+  <p class="indent" align="justify">
+  I have also worked on constraining the timescale of superheavy dark matter decay from multi-messenger signals. Currently, I am modeling the observed multiwavelength spectral energy distribution (SED) and neutrino flux from tidal disruption events (TDEs). I am interested in working on Galactic/extragalactic cosmic rays, gamma-ray and neutrino astrophsyics, the connection between short gamma-ray bursts (sGRB) and gravitational wave (GW) events stemming from compact binary mergers, etc. </p>
+  <p class="indent" align="justify">
+  I am familiar with Python and C programming language, multiprocessing, and public simulations for cosmic ray propagation, electromagnetic cascades, etc. I have written numerical codes for lepto-hadronic emission in blazar jets for modeling the non-thermal emission. I have also done analytical calculations for the absorption of high-energy gamma rays in the Galactic radiation fields and prompt dark matter decay. 
+  </p>
+	
+</div>
+
+</div>
+</div>
+
+<div style="text-align: center;" >
+<div style="display: inline-block; text-align: left; max-width:800px;min-width: 400px;">
+<div id="Links" class="tabcontent" style="margin-top:-29px;">
+
+<div class="row">
+  	<div class="column" >
+    	<h4>Useful Links</h4>
+  	<ul>
+  		<li><a href="https://people.duke.edu/~ccc14/sta-663/index.html">Computational statistics in python</a></li>
+  		<li><a href="https://crpropa.github.io/CRPropa3/">CRPropa3 Documentation </a></li>
+ 		<li><a href="https://www.wolframalpha.com/input/">Wolfram Alpha</a></li>
+  		<li><a href="https://galaxiesbook.org/"> Galactic Dynamics by Jo Bovy</a></li>
+  		<li><a href="https://docs.python.org/3.8/library/multiprocessing.html"> Multiprocessing Python3.8</a></li>
+  	</ul>
+  	</div>
+  	
+  	<div class="column">
+    	<h4>arXiv picks</h4>
+  	<ul>
+  		<li><a href="arxiv_2022.html">2022</a></li>
+  		<li><a href="arxiv_2023.html">2023</a></li>
+  	</ul>
+	</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div style="text-align: center;" >
+<div style="display: inline-block; text-align: left; max-width:1000px;min-width: 400px;">
+<div id="Profile" class="tabcontent" style="margin-top: -35px;">
+	<h4><i> <id ="tab4" class="fa fa-fw fa-user"></i> Personal Info</h4>
+  	<!--Born: 1994, Kolkata<br>-->
+  	Nationality: India<br>
+  	ORCID: <a href="https://orcid.org/0000-0001-5796-225X"> 0000-0001-5796-225X </a>
+  	
+	<h4><i> <id ="tab2" class="fa fa-fw fa-briefcase"></i> Appointments</h4>
+	<table>
+		<tr>
+			<td>2021 /10 - present</td>
+			<td>Postdoc fellow</td>
+			<td>Yukawa Institute for Theoretical Physics, Kyoto 606-8502, Japan</td>
+		</tr>
+		<tr>
+  			<td>2021 /01 - 2021 /08</td>
+  			<td>Research Fellow</td>
+  			<td>Raman Research Institute, Bangalore 560080, Karnataka, India</td>
+  		</tr>
+  		<tr>
+  			<td><h4><i> <id ="tab2" class="fa fa-fw fa-graduation-cap"></i> Education</h4></td>
+  			<td> </td>
+  			<td> </td>
+  		</tr>
+  		<tr>
+  			<td>2016 /08 - 2020 /12</td>
+  			<td>Ph.D. Physics</td>
+  			<td>Raman Research Institute, Bangalore 560080, Karnataka, India</td>
+  		</tr>
+  		<tr>
+  			<td>2014 /08 - 2016 /07</td>
+  			<td>M.Sc. Physics</td>
+  			<td>Indian Institute of Technology, Kharagpur 721302, West Bengal, India</td>
+  		</tr>
+  		<tr>
+  			<td>2011 /08 - 2014 /07</td>
+  			<td>B.Sc. Physics</td>
+  			<td>Jadavpur University, Kolkata 700032, West Bengal, India</td>
+  		</tr>
+  		<!--<tr>
+  			<td> &emsp; &emsp; &nbsp; - 2011/7</td>
+  			<td>High School</td>
+  			<td>Bidhannagar Municipal School, Kolkata, India</td>
+  		</tr>-->
+  	</table>
+  
+  	<!--<h4><i> <id ="tab2" class="fa fa-fw fa-award"></i> Awards & Fellowships</h4>-->
+  	<h4><i class="fa fa-fw fa-desktop"></i> Computer skills</h4>
+  	Programming: C, Python, HTML; Computational Statistics, OS: Linux -- Ubuntu
+  	<h4><i> <id ="tab2" class="fa fa-language"></i> Language proficiency</h4>
+  	Bengali: Native<br>
+  	English: Fluent
+  	<h4><i class="fa fa-fw fa-users"></i> Conference & Workshops</h4>
+  	<table>
+  		<tr>
+  			<td>2022</td>
+  			<td>Tenth Fermi Symposium, University of Johannesburg, South Africa</td>
+  			<td>Talk</td>
+  		</tr>
+  		<tr>
+  			<td>2022</td>
+  			<td>Multimessenger study on heavy dark matter, Kyoto University, Japan</td>
+  			<td>Talk</td>
+  		</tr>
+  		<tr>
+  			<td>2021</td>
+  			<td><b>(Online)</b> International Cosmic Ray Conference (ICRC), Germany</td>
+  			<td>Talk & Poster</td>
+  		</tr>
+  		<tr>
+  			<td>2022</td>
+  			<td><b>(Online)</b> Ninth Fermi Symposium, University of Johannesburg, South Africa</td>
+  			<td>Talk</td>
+  		</tr>
+  		<tr>
+  			<td>2021</td>
+  			<td><b>(Online)</b> RATOP 2021, Center for Theoretical Physics, Warsaw, Poland</td>
+  			<td>Talk</td>
+  		<tr>
+  			<td>2019</td>
+  			<td>ISAPP school on cosmic rays, Pierre Auger Observatory, Argentina</td>
+  			<td>Talk & Poster</td>
+  		</tr>
+  		<tr>
+  			<td>2018</td>
+  			<td>IIT Bombay - ICTP workshop on neutrino physics, India</td>
+  			<td>Participation</td>
+  		</tr>
+  	</table>
+	
+	<br>
+	<br>
+</div>
+</div>
+</div>
+
+<script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html> 
+
