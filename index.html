@@ -87,12 +87,10 @@
 					<div id="sidebar">
 						<div class="inner">
 
-							<!-- Search -->
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
+							<section id="search" class="alt">
+								<input type="text" id="query" placeholder="Search" />
+								<div id="results"></div>
+							  </section>
 
 							<!-- Menu -->
 								<nav id="menu">
@@ -147,6 +145,30 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+				// List of pages in your site (add more here)
+				const pages = [
+				  { title: "Home", url: "index.html" },
+				  { title: "Research", url: "research.html" },
+				  { title: "Publications", url: "publications.html" },
+				  { title: "Talks", url: "talks.html" },
+				  { title: "CV", url: "das_cv.html" }
+				];
+				
+				const input = document.getElementById("query");
+				const resultsDiv = document.getElementById("results");
+				
+				input.addEventListener("input", function () {
+				  const query = this.value.toLowerCase();
+				  if (!query) {
+					resultsDiv.innerHTML = "";
+					return;
+				  }
+				  const results = pages.filter(p => p.title.toLowerCase().includes(query));
+				  resultsDiv.innerHTML = results.length
+					? results.map(r => `<a href="${r.url}">${r.title}</a>`).join("<br>")
+					: "<em>No results</em>";
+				});
+				</script>
 	</body>
 </html>
