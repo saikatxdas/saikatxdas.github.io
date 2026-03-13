@@ -98,13 +98,13 @@ body, input, select, textarea {
   line-height: 1.5; }
   @media screen and (max-width: 1680px) {
     body, input, select, textarea {
-      font-size: 11pt; } }
+      font-size: 12pt; } }
   @media screen and (max-width: 1280px) {
     body, input, select, textarea {
-      font-size: 10pt; } }
+      font-size: 11pt; } }
   @media screen and (max-width: 360px) {
     body, input, select, textarea {
-      font-size: 9pt; } }
+      font-size: 10pt; } }
 
 a {
   -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
@@ -1931,13 +1931,13 @@ button,
   background-color: #f5f6f7;
   font-size: 0.9em;
   position: relative;
-  width: 26em; }
+  width: 20em; }
   #sidebar h2 {
     font-size: 1.38889em; }
   #sidebar > .inner {
     padding: 2.22222em 2.22222em 2.44444em 2.22222em ;
     position: relative;
-    width: 26em; }
+    width: 20em; }
     #sidebar > .inner > * {
       border-bottom: solid 2px rgba(210, 215, 217, 0.75);
       margin: 0 0 3.5em 0;
@@ -1964,7 +1964,7 @@ button,
     border: 0;
     display: block;
     height: 7.5em;
-    left: 26em;
+    left: 20em;
     line-height: 7.5em;
     outline: 0;
     overflow: hidden;
@@ -1997,27 +1997,27 @@ button,
       top: 0;
       width: inherit; }
   #sidebar.inactive {
-    margin-left: -26em; }
+    margin-left: -20em; }
   @media screen and (max-width: 1680px) {
     #sidebar {
-      width: 24em; }
+      width: 20em; }
       #sidebar > .inner {
         padding: 1.66667em 1.66667em 1.33333em 1.66667em ;
-        width: 24em; }
+        width: 20em; }
         #sidebar > .inner > .alt {
           margin: -1.66667em 0 3.33333em -1.66667em;
           padding: 1.66667em;
           width: calc(100% + 3.33333em); }
       #sidebar .toggle {
         height: 6.25em;
-        left: 24em;
+        left: 20em;
         line-height: 6.25em;
         text-indent: 5em;
         width: 5em; }
         #sidebar .toggle:before {
           font-size: 1.5rem; }
       #sidebar.inactive {
-        margin-left: -24em; } }
+        margin-left: -20em; } }
   @media screen and (max-width: 1280px) {
     #sidebar {
       box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.175);
